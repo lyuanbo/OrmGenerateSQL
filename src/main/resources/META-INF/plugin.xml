@@ -6,13 +6,12 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.lyuanbo.ormgeneratesql.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.lyuanbo.ormgeneratesql.services.MyProjectService"/>
-    </extensions>
+    <actions>
+        <group id="GenerateSQLGroup" text="SQL生成">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="DbConfigAction" class="com.github.lyuanbo.ormgeneratesql.action.DbConfigAction" text="数据库配置"/>
+            <action id="Generate" class="com.github.lyuanbo.ormgeneratesql.GenerateSQLAnAction" text="SQL生成"/>
+        </group>
 
-    <applicationListeners>
-        <listener class="com.github.lyuanbo.ormgeneratesql.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    </actions>
 </idea-plugin>
