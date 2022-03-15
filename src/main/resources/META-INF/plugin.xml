@@ -6,12 +6,14 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <actions>
-        <group id="GenerateSQLGroup" text="SQL生成">
-            <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="DbConfigAction" class="com.github.lyuanbo.ormgeneratesql.action.DbConfigAction" text="数据库配置"/>
-            <action id="Generate" class="com.github.lyuanbo.ormgeneratesql.GenerateSQLAnAction" text="SQL生成"/>
-        </group>
 
+    <actions>
+        <group id="DBConfigUIGroup" text="OrmGenerateSQL">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="DBConfigUIAction" class="com.github.lyuanbo.ormgeneratesql.action.DBConfigAction"
+                    text="数据库配置"/>
+        </group>
     </actions>
+
+
 </idea-plugin>
