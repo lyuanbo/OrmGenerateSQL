@@ -9,6 +9,6 @@ import com.intellij.openapi.actionSystem.AnActionEvent
 class DBConfigAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         // 获取弹出框的大小
-        DbConfigUIV2("数据库配置")
+        CustomDialogWrapper().showAndGet()
     }
 }

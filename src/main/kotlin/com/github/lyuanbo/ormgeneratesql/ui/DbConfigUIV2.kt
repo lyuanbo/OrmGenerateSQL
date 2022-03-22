@@ -92,7 +92,7 @@ class DbConfigUIV2(title: String) {
         confirmJPanel.setSize(72, 24)
         confirmJPanel.setLocation(windowWidth - 72 - 28, 10) // 相对它父级容器的偏移量
 
-        confirmJPanel.border = RoundBorder(Color(Integer.decode("#487EB8")), Color(Integer.decode("#346DAD")), 10, 10)
+        confirmJPanel.border = RoundBorder(Color(Integer.decode("#567B99")), Color(Integer.decode("#3E628D")), 10, 10)
         val confirmButton = JButton("确定")
         confirmButton.setSize(72, 24)
         confirmButton.isBorderPainted = false
@@ -119,7 +119,7 @@ class DbConfigUIV2(title: String) {
         // 设置窗口大小
         window.setSize(windowWidth, windowHeight)
         // 设置窗口最大大小
-        window.maximumSize = window.size
+      //  window.maximumSize = window.size
         // 设置窗口可见
         window.isVisible = true
         // 禁用窗口最大化
